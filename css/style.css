@@ -1,0 +1,110 @@
+li {
+    color: greenyellow;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+ li[draggable] {
+    color: purple;
+}
+
+
+/* ---------------------------------------------------- */
+
+.listItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 2em;
+}
+
+.list1 {
+    margin-left: 5%;
+    margin-right: 25%;
+}
+
+.list2 {
+    margin-left: 5%;
+    margin-right: 25%;
+    
+}
+
+.list3 {
+    margin-left: 5%;
+}
+
+.list2 li {
+   color :#eb4c4c !important; 
+}
+
+
+#first_id {
+    color: orange;
+   
+} 
+
+
+/* ------------------------------------------------------------------------- */
+
+body {
+    background-color:  rgb(62, 0, 156);
+}
+
+h1 {
+    color : #8df3fa;
+}
+
+h2 {
+    color : #f8ee7d;
+    font-family: 'Satisfy', cursive;
+
+}
+
+
+/* ------------------------------------------------------------------------------ */
+
+.outer-box {
+    border: 10px solid rgb(0, 113, 128);
+    margin-bottom: 2%;
+}
+
+.box {
+    background-color: darkslateblue;
+    padding: 10px 20px;
+}
+
+.box  .inner-box {
+    background-color: coral;
+}
+
+.box > h1 {
+    color : yellow;
+
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+h1.white-text {
+    color: white ;
+    font-family: 'Pacifico', cursive;
+
+}
+
+/* ----------------------------------------------------- */
+
+.dark-mountain {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* Chaining Elements  */
+
+li.done {
+    color: rgb(239, 6, 165) ;
+}
+
+/* Combining a Combiner */
+body li.combiner {
+    color :#f8ee7d;
+}

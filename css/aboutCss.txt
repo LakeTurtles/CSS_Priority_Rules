@@ -1,0 +1,100 @@
+Cascading Style Sheets
+
+CSS will focus on : 
+----------------------------------------------------------------------------------
+ Position,         -- h1
+
+ Specificity,      -- h1 #first_id
+                   -- inline Css is more specific than external Css.
+                   -- <h1 style={color:green}</h1> is more specific than h1 {color:green}
+
+ Type,             -- (external Css, Internal/Embedded Css, Inline Css), 
+
+ Importance.       -- h1 #first_id {color: green !important}
+
+-------------------------------------------------------------------------------------
+Importance of Css Selectors to compiler.
+Which selector will override the other selectors css properties. 1 being total supremacy.
+
+1. id
+    - id="first_id"
+    - you can have multiple id's assigned to a div 
+    - id="first_id first_section first_paragraph"
+
+2. attribute
+    - li[draggable]
+    - h1[contenteditable]
+
+3. class
+    - class="firstList"
+    - you can have multiple class names
+    - class="firstList content1 paragraph1 section1"
+    - which ever class property you have specified first in your css. will render first
+
+4. element
+    - button
+    - input
+    - h1
+    - body
+
+
+
+    -----------------------------------------------------------------------
+    Combining css
+    -----------------------------------------------------------------------
+
+    h1, h2, h3 {
+        color: green;
+    }
+
+    h4, h5 {
+        color: blue;
+    }
+
+    -----------------------------------------------------------------------
+      Selecting an immediate Child of Parent
+    -----------------------------------------------------------------------
+    It has to be a direct child or only nested 1 level down.
+    
+
+    parent > child {
+        color: green
+    }
+
+    .parent-class-1 > .child-class-1 {
+        color: green;
+    }
+
+
+    -----------------------------------------------------------------------
+      Selecting a Child of Parent
+    -----------------------------------------------------------------------
+    It can be many many levels down
+
+
+    .top-parent-class .very-nested-class {
+        color : green ;
+    }
+
+    -----------------------------------------------------------------------
+      Chaining Elements
+    -----------------------------------------------------------------------
+                   <h1 id="title" class="big class1 dark1">Heading One</h1>
+
+
+    Always start with the Element to avoid confusion.
+
+    h1#title.big.class1.dark1 {
+        color : green;
+    }
+
+
+    -----------------------------------------------------------------------
+      Combining Combiiners
+    -----------------------------------------------------------------------
+
+    selector chainedselector {
+        color : green;
+    }
+
+
